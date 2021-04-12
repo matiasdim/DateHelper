@@ -38,8 +38,6 @@
 		1365FB1426249E5800D35AE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1365FB1926249E5800D35AE4 /* DateHelperExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateHelperExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1365FB1B26249E5800D35AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1365FB2226249E5800D35AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1365FB2326249E5800D35AE4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		1365FB372624A31100D35AE4 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +74,6 @@
 				1365FB0226249DFC00D35AE4 /* DateHelperTests */,
 				1365FB1126249E5700D35AE4 /* Shared */,
 				1365FB1A26249E5800D35AE4 /* iOS */,
-				1365FB2126249E5800D35AE4 /* macOS */,
 				1365FAF626249DFC00D35AE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,15 +123,6 @@
 				1365FB1B26249E5800D35AE4 /* Info.plist */,
 			);
 			path = iOS;
-			sourceTree = "<group>";
-		};
-		1365FB2126249E5800D35AE4 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				1365FB2226249E5800D35AE4 /* Info.plist */,
-				1365FB2326249E5800D35AE4 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +428,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DateHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,8 +437,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.matiasdim.DateHelper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -465,6 +455,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DateHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +464,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.matiasdim.DateHelper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
