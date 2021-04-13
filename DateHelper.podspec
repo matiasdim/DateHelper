@@ -55,7 +55,7 @@ A CocoaPods library written in Swift to easily deal with date formatting.
   spec.author             = { "Matías Gil" => "matiasdim3@gmail.com" }
   # Or just: spec.author    = "Matías Gil"
   # spec.authors            = { "Matías Gil" => "matiasdim3@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/Matías Gil"
+  # spec.social_media_url   = "https://twitter.com/matiasdim"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
